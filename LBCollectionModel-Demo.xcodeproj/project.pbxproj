@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		670F2CF8180E9B3600C524B1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 670F2CF7180E9B3600C524B1 /* README.md */; };
 		673A59E5180E975F0064232A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673A59E4180E975F0064232A /* Foundation.framework */; };
 		673A59E7180E975F0064232A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673A59E6180E975F0064232A /* CoreGraphics.framework */; };
 		673A59E9180E975F0064232A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673A59E8180E975F0064232A /* UIKit.framework */; };
@@ -24,7 +25,6 @@
 		673A5A1F180E977D0064232A /* LBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A1A180E977D0064232A /* LBCell.m */; };
 		673A5A20180E977D0064232A /* LBCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A1C180E977D0064232A /* LBCollectionModel.m */; };
 		673A5A21180E977D0064232A /* LBFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A1E180E977D0064232A /* LBFooter.m */; };
-		67BBFFFE180E97F700BB1B6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67BBFFFD180E97F700BB1B6C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		670F2CF7180E9B3600C524B1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		673A59E1180E975F0064232A /* LBCollectionModel-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LBCollectionModel-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		673A59E4180E975F0064232A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		673A59E6180E975F0064232A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +64,6 @@
 		673A5A1C180E977D0064232A /* LBCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCollectionModel.m; sourceTree = "<group>"; };
 		673A5A1D180E977D0064232A /* LBFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFooter.h; sourceTree = "<group>"; };
 		673A5A1E180E977D0064232A /* LBFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBFooter.m; sourceTree = "<group>"; };
-		67BBFFFD180E97F700BB1B6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 				673A59FA180E975F0064232A /* ViewController.m */,
 				673A5A22180E97810064232A /* LBCollectionModel */,
 				673A59FC180E975F0064232A /* Images.xcassets */,
-				67BBFFFD180E97F700BB1B6C /* README.md */,
+				670F2CF7180E9B3600C524B1 /* README.md */,
 				673A59EB180E975F0064232A /* Supporting Files */,
 			);
 			path = "LBCollectionModel-Demo";
@@ -256,7 +256,7 @@
 			files = (
 				673A59FD180E975F0064232A /* Images.xcassets in Resources */,
 				673A59EF180E975F0064232A /* InfoPlist.strings in Resources */,
-				67BBFFFE180E97F700BB1B6C /* README.md in Resources */,
+				670F2CF8180E9B3600C524B1 /* README.md in Resources */,
 				673A59F8180E975F0064232A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
