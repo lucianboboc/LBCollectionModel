@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "LBCollectionModel.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
+@property (strong, nonatomic) LBCollectionModel *collectionModel;
 
 @end
 
@@ -17,7 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.collectionModel = [[LBCollectionModel alloc] initWithCollectionView: self.myCollectionView];
+    [self.collectionModel loadInitialData];
 }
 
 - (void)didReceiveMemoryWarning

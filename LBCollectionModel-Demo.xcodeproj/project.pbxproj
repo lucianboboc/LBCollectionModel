@@ -21,6 +21,10 @@
 		673A5A06180E975F0064232A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673A59E8180E975F0064232A /* UIKit.framework */; };
 		673A5A0E180E975F0064232A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 673A5A0C180E975F0064232A /* InfoPlist.strings */; };
 		673A5A10180E975F0064232A /* LBCollectionModel_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A0F180E975F0064232A /* LBCollectionModel_DemoTests.m */; };
+		673A5A1F180E977D0064232A /* LBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A1A180E977D0064232A /* LBCell.m */; };
+		673A5A20180E977D0064232A /* LBCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A1C180E977D0064232A /* LBCollectionModel.m */; };
+		673A5A21180E977D0064232A /* LBFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 673A5A1E180E977D0064232A /* LBFooter.m */; };
+		67BBFFFE180E97F700BB1B6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67BBFFFD180E97F700BB1B6C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		673A5A0B180E975F0064232A /* LBCollectionModel-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LBCollectionModel-DemoTests-Info.plist"; sourceTree = "<group>"; };
 		673A5A0D180E975F0064232A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		673A5A0F180E975F0064232A /* LBCollectionModel_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBCollectionModel_DemoTests.m; sourceTree = "<group>"; };
+		673A5A19180E977D0064232A /* LBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCell.h; sourceTree = "<group>"; };
+		673A5A1A180E977D0064232A /* LBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCell.m; sourceTree = "<group>"; };
+		673A5A1B180E977D0064232A /* LBCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCollectionModel.h; sourceTree = "<group>"; };
+		673A5A1C180E977D0064232A /* LBCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCollectionModel.m; sourceTree = "<group>"; };
+		673A5A1D180E977D0064232A /* LBFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFooter.h; sourceTree = "<group>"; };
+		673A5A1E180E977D0064232A /* LBFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBFooter.m; sourceTree = "<group>"; };
+		67BBFFFD180E97F700BB1B6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +128,9 @@
 				673A59F6180E975F0064232A /* Main.storyboard */,
 				673A59F9180E975F0064232A /* ViewController.h */,
 				673A59FA180E975F0064232A /* ViewController.m */,
+				673A5A22180E97810064232A /* LBCollectionModel */,
 				673A59FC180E975F0064232A /* Images.xcassets */,
+				67BBFFFD180E97F700BB1B6C /* README.md */,
 				673A59EB180E975F0064232A /* Supporting Files */,
 			);
 			path = "LBCollectionModel-Demo";
@@ -150,6 +163,19 @@
 				673A5A0C180E975F0064232A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		673A5A22180E97810064232A /* LBCollectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				673A5A1B180E977D0064232A /* LBCollectionModel.h */,
+				673A5A1C180E977D0064232A /* LBCollectionModel.m */,
+				673A5A19180E977D0064232A /* LBCell.h */,
+				673A5A1A180E977D0064232A /* LBCell.m */,
+				673A5A1D180E977D0064232A /* LBFooter.h */,
+				673A5A1E180E977D0064232A /* LBFooter.m */,
+			);
+			name = LBCollectionModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +256,7 @@
 			files = (
 				673A59FD180E975F0064232A /* Images.xcassets in Resources */,
 				673A59EF180E975F0064232A /* InfoPlist.strings in Resources */,
+				67BBFFFE180E97F700BB1B6C /* README.md in Resources */,
 				673A59F8180E975F0064232A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673A5A20180E977D0064232A /* LBCollectionModel.m in Sources */,
 				673A59FB180E975F0064232A /* ViewController.m in Sources */,
+				673A5A1F180E977D0064232A /* LBCell.m in Sources */,
 				673A59F5180E975F0064232A /* AppDelegate.m in Sources */,
+				673A5A21180E977D0064232A /* LBFooter.m in Sources */,
 				673A59F1180E975F0064232A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +490,7 @@
 				673A5A15180E975F0064232A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		673A5A16180E975F0064232A /* Build configuration list for PBXNativeTarget "LBCollectionModel-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +499,7 @@
 				673A5A18180E975F0064232A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
